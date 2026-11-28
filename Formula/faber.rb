@@ -3,17 +3,17 @@
 class Faber < Formula
   desc "Faber programming language compiler and build tool"
   homepage "https://faberlang.dev"
-  version "1.24.0"
+  version "1.25.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/faberlang/releases/releases/download/faber-v1.24.0/faber-v1.24.0-aarch64-apple-darwin.tar.gz"
-    sha256 "1fc2dd81777c339afc63c05fa8cd7f73a06390b3a99ba27e7101b2286bda4e9a"
+    url "https://github.com/faberlang/releases/releases/download/faber-v1.25.0/faber-v1.25.0-aarch64-apple-darwin.tar.gz"
+    sha256 "dc78ed566e5a87ca21e3875fb62cd6329dfe56541e1738af851c131c0d39a094"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/faberlang/releases/releases/download/faber-v1.24.0/faber-v1.24.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "449173cc64049b85ba917b0af50b9c116365a12a9ca16414219071fdea7cc523"
+    url "https://github.com/faberlang/releases/releases/download/faber-v1.25.0/faber-v1.25.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "eb9d5eb4d8d1346a7edd642978b3ce8beac88e3fff9fc1f2da59356045a3bebf"
   else
-    odie "faber 1.24.0 publishes binaries for: aarch64-apple-darwin, x86_64-unknown-linux-gnu"
+    odie "faber 1.25.0 publishes binaries for: aarch64-apple-darwin, x86_64-unknown-linux-gnu"
   end
 
   def install
